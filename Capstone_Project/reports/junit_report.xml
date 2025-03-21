@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="182.547" tests="33" skipped="0" failures="0" errors="0" timestamp="2025-03-21T09:06:02.811391200Z">
+<testcase classname="Search and Filter Course" name="User filters courses by category field - #1.1" time="18.851">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user selects "Sotfware Testing" from the category field................passed
+And clicks on the search button.............................................passed
+Then courses related to "Sotfware Testing" should be displayed..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User filters courses by category field - #1.2" time="4.517">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user selects "Selenium WebDriver" from the category field..............passed
+And clicks on the search button.............................................passed
+Then courses related to "Selenium WebDriver" should be displayed............passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User filters courses by category field - #1.3" time="5.536">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user selects "Software Development" from the category field............passed
+And clicks on the search button.............................................passed
+Then courses related to "Software Development" should be displayed..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User searches courses by Search Course filed - #1.1" time="3.375">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user enters "selenium" in the search field.............................passed
+And clicks on the search button.............................................passed
+Then courses related to course "selenium" should be displayed...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User searches courses by Search Course filed - #1.2" time="2.842">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user enters "java" in the search field.................................passed
+And clicks on the search button.............................................passed
+Then courses related to course "java" should be displayed...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User searches courses by Search Course filed - #1.3" time="2.389">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user enters "python" in the search field...............................passed
+And clicks on the search button.............................................passed
+Then courses related to course "python" should be displayed.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User filters courses by category and searches for a course - #1.1" time="3.425">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user selects "Sotfware Testing" from the category field................passed
+And user searches for "selenium" in search field............................passed
+And clicks on the search button.............................................passed
+Then relevant courses should be displayed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User filters courses by category and searches for a course - #1.2" time="3.402">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user selects "Test Automation" from the category field.................passed
+And user searches for "java" in search field................................passed
+And clicks on the search button.............................................passed
+Then relevant courses should be displayed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Course" name="User filters courses by category and searches for a course - #1.3" time="5">
+<system-out><![CDATA[
+Given user is on the All Courses page.......................................passed
+When user selects "Software Development" from the category field............passed
+And user searches for "javascript" in search field..........................passed
+And clicks on the search button.............................................passed
+Then relevant courses should be displayed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification" name="Verify the title and major sections of the Home Page" time="6.176">
+<system-out><![CDATA[
+Given I open the browser and navigated to home page.........................passed
+Then the page title should be "Home Page"...................................passed
+And the following sections should be visible:...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can select different radio buttons - #1.1" time="2.143">
+<system-out><![CDATA[
+When I select the "BMW" radio button........................................passed
+Then the "BMW" radio button should be selected..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can select different radio buttons - #1.2" time="2.605">
+<system-out><![CDATA[
+When I select the "Benz" radio button.......................................passed
+Then the "Benz" radio button should be selected.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can select different radio buttons - #1.3" time="2.21">
+<system-out><![CDATA[
+When I select the "Honda" radio button......................................passed
+Then the "Honda" radio button should be selected............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can check and uncheck checkboxes - #1.1" time="2.618">
+<system-out><![CDATA[
+When I select the "BMW" checkbox............................................passed
+Then the "BMW" checkbox should be selected..................................passed
+When I deselect the "BMW" checkbox..........................................passed
+Then the "BMW" checkbox should not be selected..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can check and uncheck checkboxes - #1.2" time="1.987">
+<system-out><![CDATA[
+When I select the "Benz" checkbox...........................................passed
+Then the "Benz" checkbox should be selected.................................passed
+When I deselect the "Benz" checkbox.........................................passed
+Then the "Benz" checkbox should not be selected.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can check and uncheck checkboxes - #1.3" time="2.548">
+<system-out><![CDATA[
+When I select the "Honda" checkbox..........................................passed
+Then the "Honda" checkbox should be selected................................passed
+When I deselect the "Honda" checkbox........................................passed
+Then the "Honda" checkbox should not be selected............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can open a new window and switch back" time="2.055">
+<system-out><![CDATA[
+When I click the Open Window button.........................................passed
+Then a new window should open...............................................passed
+When I switch to the new window.............................................passed
+And I close the new window and switch back..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can open a new tab and switch back" time="2.404">
+<system-out><![CDATA[
+When I click the Open Tab link..............................................passed
+Then a new tab should open..................................................passed
+When I switch to the new tab................................................passed
+And I close the new tab and switch back.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can select from the dropdown menu - #1.1" time="2.216">
+<system-out><![CDATA[
+When I select "BMW" from the dropdown.......................................passed
+Then "BMW" should be selected in the dropdown...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can select from the dropdown menu - #1.2" time="2.394">
+<system-out><![CDATA[
+When I select "Benz" from the dropdown......................................passed
+Then "Benz" should be selected in the dropdown..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can select from the dropdown menu - #1.3" time="2.472">
+<system-out><![CDATA[
+When I select "Honda" from the dropdown.....................................passed
+Then "Honda" should be selected in the dropdown.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can select multiple options from the Multipleselectoption" time="2.462">
+<system-out><![CDATA[
+When I select the following options from the multiple select dropdown:......passed
+Then the following options should be selected in the multiple select dropdown:.passed
+When I deselect "Orange" from the multiple select dropdown..................passed
+Then the following options should be selected in the multiple select dropdown:.passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can Disable and Enable the input field" time="2.265">
+<system-out><![CDATA[
+When I click on the "Disable" button........................................passed
+Then the input field should be disabled.....................................passed
+When I click on the "Enable" button.........................................passed
+Then the input field should be enabled......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify user can hide and show the input field" time="2.321">
+<system-out><![CDATA[
+When I click on the "Hide" button...........................................passed
+Then the input field should be hidden.......................................passed
+When I click on the "Show" button...........................................passed
+Then the input field should be visible......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify Alert and Confirm popups" time="2.181">
+<system-out><![CDATA[
+When I enter "Aditya Reddy" in the name field...............................passed
+And I click on the "Alert" button...........................................passed
+Then an alert should appear with text containing "Aditya Reddy".............passed
+When I click on the "Confirm" button........................................passed
+Then a confirmation alert should appear.....................................passed
+And I accept the confirmation alert.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify Mouse Hover functionality" time="6.363">
+<system-out><![CDATA[
+When I Hover on the "Mouse Hover" button....................................passed
+Then the mouse hover options should be visible..............................passed
+When I click on the "Top" option............................................passed
+Then the page should scroll to the top......................................passed
+When I Hover on the "Mouse Hover" button....................................passed
+And I click on the "Reload" option..........................................passed
+Then the page should reload.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify Web Table Data" time="2.213">
+<system-out><![CDATA[
+Then the table should contain the following courses:........................passed
+When I search for the course "Python Programming Language" in table.........passed
+Then the price should be "30"...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Verify Auto Suggest functionality" time="2.913">
+<system-out><![CDATA[
+When I enter "Java" in the search field.....................................passed
+Then I should see the suggestions related to "Java".........................passed
+And I select "Selenium WebDriver Java" from the suggestions.................passed
+Then the search field should contain "Selenium WebDriver Java"..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate LetsKodeIt Practice Page" name="Validate iframe and section elements" time="2.933">
+<system-out><![CDATA[
+Given I am on the Practice Page.............................................passed
+And I switch to the iframe..................................................passed
+Then I verify the iframe page title.........................................passed
+And the following sections should be visible in the iframe:.................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login" name="Successful Registration with valid credentials - #1.1" time="58.03">
+<system-out><![CDATA[
+Given User is on the Letskodeit Practise homepage...........................passed
+When the user clicks the Sign In link.......................................passed
+Then the user is in the login page..........................................passed
+Then the user clicks on the register link...................................passed
+Then the registration page is displayed on the screen.......................passed
+When the user enters "Adithya Reddy" and "Gooli" and "12a3456543za342q101@gmail.com" and "Aditya@1" and "Aditya@1".passed
+And the user ticks the captcha checkbox.....................................passed
+When the user clicks the signup button......................................passed
+Then the user sees the My Courses page......................................passed
+When the user clicks the Logout.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login" name="Successful Login with valid credentials - #1.1" time="2.902">
+<system-out><![CDATA[
+Given User is on the Letskodeit Practise homepage...........................passed
+When the user clicks the Sign In link.......................................passed
+Then the user is in the login page..........................................passed
+When the user enters "123456543210@gmail.com" and "Aditya@1"................passed
+And the user clicks the login button for a successful login.................passed
+Then the user is redirected to the My Courses page..........................passed
+When the user clicks the Logout.............................................passed
+Then the user is redirected to the homepage.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login" name="Login with Invalid credentials - #1.1" time="6.96">
+<system-out><![CDATA[
+Given User is on the Letskodeit Practise homepage...........................passed
+When the user clicks the Sign In link.......................................passed
+Then the user is in the login page..........................................passed
+When the user enters WongCrendtials "Aditya1@gmail.com" and "Aditya@1"......passed
+And the user clicks the login button for an unsuccessful login..............passed
+Then the login page will show "Incorrect login details" in the display......passed
+When the user clicks the Forget Password button.............................passed
+Then the user is redirected to the Password RestPage........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart Functionality" name="Add a product to the cart and proceed to checkout" time="8.251">
+<system-out><![CDATA[
+Given User is on the practice page..........................................passed
+When User navigates to eCommerce Practice Page..............................passed
+And User clicks on "Shop Now"...............................................passed
+And User selects a product..................................................passed
+And User selects size "L"...................................................passed
+And User adds the product to the bag........................................passed
+And User proceeds to checkout...............................................passed
+Then User should see "My Bag" page..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

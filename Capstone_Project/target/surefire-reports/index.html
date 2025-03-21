@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods, 3 failed,   30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Registration with valid credentials&quot;, &quot;User Registration and Login&quot;)">runScenario("Successful Registration with valid credentials", "User Registration and Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Login with valid credentials&quot;, &quot;User Registration and Login&quot;)">runScenario("Successful Login with valid credentials", "User Registration and Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User filters courses by category field&quot;, &quot;Search and Filter Course&quot;)">runScenario("User filters courses by category field", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User filters courses by category field&quot;, &quot;Search and Filter Course&quot;)">runScenario("User filters courses by category field", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can Disable and Enable the input field&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can Disable and Enable the input field", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can hide and show the input field&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can hide and show the input field", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can select multiple options from the Multipleselectoption&quot;, &quot;Automate LetsKodeIt Practi...)">runScenario("Verify user can select multiple options from the Multipleselectoption", "Automate LetsKodeIt Practi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can check and uncheck checkboxes&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can select from the dropdown menu&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can open a new window and switch back&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can open a new window and switch back", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User filters courses by category and searches for a course&quot;, &quot;Search and Filter Course&quot;)">runScenario("User filters courses by category and searches for a course", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User searches courses by Search Course filed&quot;, &quot;Search and Filter Course&quot;)">runScenario("User searches courses by Search Course filed", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Alert and Confirm popups&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify Alert and Confirm popups", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can select different radio buttons&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can select from the dropdown menu&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can check and uncheck checkboxes&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User searches courses by Search Course filed&quot;, &quot;Search and Filter Course&quot;)">runScenario("User searches courses by Search Course filed", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Auto Suggest functionality&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify Auto Suggest functionality", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can open a new tab and switch back&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can open a new tab and switch back", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate iframe and section elements&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Validate iframe and section elements", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User filters courses by category field&quot;, &quot;Search and Filter Course&quot;)">runScenario("User filters courses by category field", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can select different radio buttons&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Web Table Data&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify Web Table Data", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can check and uncheck checkboxes&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User searches courses by Search Course filed&quot;, &quot;Search and Filter Course&quot;)">runScenario("User searches courses by Search Course filed", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User filters courses by category and searches for a course&quot;, &quot;Search and Filter Course&quot;)">runScenario("User filters courses by category and searches for a course", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Mouse Hover functionality&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify Mouse Hover functionality", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User filters courses by category and searches for a course&quot;, &quot;Search and Filter Course&quot;)">runScenario("User filters courses by category and searches for a course", "Search and Filter Course")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Invalid credentials&quot;, &quot;User Registration and Login&quot;)">runScenario("Login with Invalid credentials", "User Registration and Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can select from the dropdown menu&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add a product to the cart and proceed to checkout&quot;, &quot;Shopping Cart Functionality&quot;)">runScenario("Add a product to the cart and proceed to checkout", "Shopping Cart Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the title and major sections of the Home Page&quot;, &quot;Home Page Verification&quot;)">runScenario("Verify the title and major sections of the Home Page", "Home Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can select different radio buttons&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful Registration with valid credentials&quot;, &quot;User Registration and Login&quot;)">
+                  </a> <!-- runScenario("Successful Registration with valid credentials", "User Registration and Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful Registration with valid credentials","User Registration and Login")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Registration page is not displayed expected [true] but found [false]
+	at stepDefinations.RegistratioSteps.the_registration_page_is_displayed_on_the_screen(RegistratioSteps.java:41)
+	at ✽.the registration page is displayed on the screen(file:///C:/Users/ADITYA/eclipse-workspace/Capstone_Project/./src/test/resources/features/RegistrationAndLogin.feature:12)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful Login with valid credentials&quot;, &quot;User Registration and Login&quot;)">
+                  </a> <!-- runScenario("Successful Login with valid credentials", "User Registration and Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful Login with valid credentials","User Registration and Login")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at stepDefinations.LoginSteps.the_user_is_redirected_to_the_My_Courses_page(LoginSteps.java:36)
+	at ✽.the user is redirected to the My Courses page(file:///C:/Users/ADITYA/eclipse-workspace/Capstone_Project/./src/test/resources/features/RegistrationAndLogin.feature:28)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User filters courses by category field&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User filters courses by category field", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User filters courses by category field","Search and Filter Course")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81ab2c5523747bd871553f9472bffcfe, clickElement {id=f.E3770F255B124B8AA3CB9A1C8267A7B2.d.894D13D2D76C574D011323989E5D05AD.e.86}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ADITYA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64699}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64699/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81ab2c5523747bd871553f9472bffcfe)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: 81ab2c5523747bd871553f9472bffcfe
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.AllCoursesPage.clickOnsearchButton(AllCoursesPage.java:68)
+	at stepDefinations.AllCoursesStepDef.clicks_on_the_search_button(AllCoursesStepDef.java:31)
+	at ✽.clicks on the search button(file:///C:/Users/ADITYA/eclipse-workspace/Capstone_Project/./src/test/resources/features/ALLCourses.feature:8)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User filters courses by category field&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User filters courses by category field", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User filters courses by category field","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can Disable and Enable the input field&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can Disable and Enable the input field", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can Disable and Enable the input field","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can hide and show the input field&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can hide and show the input field", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can hide and show the input field","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can select multiple options from the Multipleselectoption&quot;, &quot;Automate LetsKodeIt Practi...)">
+                  </a> <!-- runScenario("Verify user can select multiple options from the Multipleselectoption", "Automate LetsKodeIt Practi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can select multiple options from the Multipleselectoption","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can check and uncheck checkboxes&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can check and uncheck checkboxes","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can select from the dropdown menu&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can select from the dropdown menu","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can open a new window and switch back&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can open a new window and switch back", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can open a new window and switch back","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User filters courses by category and searches for a course&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User filters courses by category and searches for a course", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User filters courses by category and searches for a course","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User searches courses by Search Course filed&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User searches courses by Search Course filed", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User searches courses by Search Course filed","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Alert and Confirm popups&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify Alert and Confirm popups", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Alert and Confirm popups","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can select different radio buttons&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can select different radio buttons","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can select from the dropdown menu&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can select from the dropdown menu","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can check and uncheck checkboxes&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can check and uncheck checkboxes","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User searches courses by Search Course filed&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User searches courses by Search Course filed", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User searches courses by Search Course filed","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Auto Suggest functionality&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify Auto Suggest functionality", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Auto Suggest functionality","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can open a new tab and switch back&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can open a new tab and switch back", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can open a new tab and switch back","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate iframe and section elements&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Validate iframe and section elements", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate iframe and section elements","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User filters courses by category field&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User filters courses by category field", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User filters courses by category field","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can select different radio buttons&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can select different radio buttons","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Web Table Data&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify Web Table Data", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Web Table Data","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can check and uncheck checkboxes&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can check and uncheck checkboxes","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User searches courses by Search Course filed&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User searches courses by Search Course filed", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User searches courses by Search Course filed","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User filters courses by category and searches for a course&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User filters courses by category and searches for a course", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User filters courses by category and searches for a course","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Mouse Hover functionality&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify Mouse Hover functionality", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Mouse Hover functionality","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User filters courses by category and searches for a course&quot;, &quot;Search and Filter Course&quot;)">
+                  </a> <!-- runScenario("User filters courses by category and searches for a course", "Search and Filter Course") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User filters courses by category and searches for a course","Search and Filter Course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Invalid credentials&quot;, &quot;User Registration and Login&quot;)">
+                  </a> <!-- runScenario("Login with Invalid credentials", "User Registration and Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Invalid credentials","User Registration and Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can select from the dropdown menu&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can select from the dropdown menu","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add a product to the cart and proceed to checkout&quot;, &quot;Shopping Cart Functionality&quot;)">
+                  </a> <!-- runScenario("Add a product to the cart and proceed to checkout", "Shopping Cart Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add a product to the cart and proceed to checkout","Shopping Cart Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the title and major sections of the Home Page&quot;, &quot;Home Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the title and major sections of the Home Page", "Home Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the title and major sections of the Home Page","Home Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can select different radio buttons&quot;, &quot;Automate LetsKodeIt Practice Page&quot;)">
+                  </a> <!-- runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can select different radio buttons","Automate LetsKodeIt Practice Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'Runner.TestRunner')
+data.setCell(0, 3, 14494);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'Runner.TestRunner')
+data.setCell(1, 3, 14130);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'Runner.TestRunner')
+data.setCell(2, 3, 11426);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'Runner.TestRunner')
+data.setCell(3, 3, 6469);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'Runner.TestRunner')
+data.setCell(4, 3, 6417);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'Runner.TestRunner')
+data.setCell(5, 3, 6189);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'Runner.TestRunner')
+data.setCell(6, 3, 5774);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'Runner.TestRunner')
+data.setCell(7, 3, 5482);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'Runner.TestRunner')
+data.setCell(8, 3, 5185);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'Runner.TestRunner')
+data.setCell(9, 3, 5097);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'Runner.TestRunner')
+data.setCell(10, 3, 4542);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'Runner.TestRunner')
+data.setCell(11, 3, 4505);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'Runner.TestRunner')
+data.setCell(12, 3, 3757);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'Runner.TestRunner')
+data.setCell(13, 3, 3227);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'Runner.TestRunner')
+data.setCell(14, 3, 2979);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'Runner.TestRunner')
+data.setCell(15, 3, 2857);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'Runner.TestRunner')
+data.setCell(16, 3, 2752);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'Runner.TestRunner')
+data.setCell(17, 3, 2688);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'Runner.TestRunner')
+data.setCell(18, 3, 2649);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'Runner.TestRunner')
+data.setCell(19, 3, 2552);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'Runner.TestRunner')
+data.setCell(20, 3, 2552);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'Runner.TestRunner')
+data.setCell(21, 3, 2516);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'Runner.TestRunner')
+data.setCell(22, 3, 2448);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'Runner.TestRunner')
+data.setCell(23, 3, 2424);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'Runner.TestRunner')
+data.setCell(24, 3, 2391);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'Runner.TestRunner')
+data.setCell(25, 3, 2376);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'Runner.TestRunner')
+data.setCell(26, 3, 2349);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'Runner.TestRunner')
+data.setCell(27, 3, 2315);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'Runner.TestRunner')
+data.setCell(28, 3, 2272);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'Runner.TestRunner')
+data.setCell(29, 3, 2271);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'Runner.TestRunner')
+data.setCell(30, 3, 2195);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'Runner.TestRunner')
+data.setCell(31, 3, 2189);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'Runner.TestRunner')
+data.setCell(32, 3, 2121);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@688d619c)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("User filters courses by category field", "Search and Filter Course")</span>
+                <span class="method-start">947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User filters courses by category field", "Search and Filter Course")</span>
+                <span class="method-start">15449 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User filters courses by category field", "Search and Filter Course")</span>
+                <span class="method-start">19992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User searches courses by Search Course filed", "Search and Filter Course")</span>
+                <span class="method-start">25178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User searches courses by Search Course filed", "Search and Filter Course")</span>
+                <span class="method-start">28411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User searches courses by Search Course filed", "Search and Filter Course")</span>
+                <span class="method-start">30761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User filters courses by category and searches for a course", "Search and Filter Course")</span>
+                <span class="method-start">34519 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User filters courses by category and searches for a course", "Search and Filter Course")</span>
+                <span class="method-start">39616 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User filters courses by category and searches for a course", "Search and Filter Course")</span>
+                <span class="method-start">45805 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the title and major sections of the Home Page", "Home Page Verification")</span>
+                <span class="method-start">50311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">56085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">58356 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can select different radio buttons", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">61005 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">63454 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">66207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can check and uncheck checkboxes", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">68480 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can open a new window and switch back", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">70873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can open a new tab and switch back", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">73190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">75743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">77939 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can select from the dropdown menu", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">80363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can select multiple options from the Multipleselectoption", "Automate LetsKodeIt Practi...)</span>
+                <span class="method-start">82553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can Disable and Enable the input field", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">85242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can hide and show the input field", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">87363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Alert and Confirm popups", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">89739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Mouse Hover functionality", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">92291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Web Table Data", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">98708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Auto Suggest functionality", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">101226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate iframe and section elements", "Automate LetsKodeIt Practice Page")</span>
+                <span class="method-start">104205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Successful Registration with valid credentials", "User Registration and Login")</span>
+                <span class="method-start">107062 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Successful Login with valid credentials", "User Registration and Login")</span>
+                <span class="method-start">112545 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with Invalid credentials", "User Registration and Login")</span>
+                <span class="method-start">126676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add a product to the cart and proceed to checkout", "Shopping Cart Functionality")</span>
+                <span class="method-start">133146 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">144573 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
